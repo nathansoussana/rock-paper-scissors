@@ -1,13 +1,21 @@
 // Variables
 let hands = ["🪨", "📄", "✂️"];
-let playerOneHand = pickHand();
-let playerTwoHand = pickHand();
+let playerOneHand;
+let playerTwoHand;
 
-// Display
-console.log(showHands())
-console.log(result())
+// HTML Elements
+let handsEl = document.getElementById("hands-el")
+let resultEl = document.getElementById("result-el")
+let playButton = document.getElementById("play-btn")
 
-// Functions
+// Functions & Rules
+function playRound() {
+  playerOneHand = pickHand()
+  playerTwoHand = pickHand()
+  handsEl.textContent = showHands()
+  resultEl.textContent = displayResult()
+}
+
 function pickHand() {
   let i = Math.floor(Math.random() * hands.length)
   return hands[i]
@@ -17,7 +25,7 @@ function showHands() {
   return `P1: ${playerOneHand}\nP2: ${playerTwoHand}`
 }
 
-function result() {
+function displayResult() {
   if (playerOneHand === "🪨") {
     if (playerTwoHand === "🪨") {
       return "Tie!"
@@ -46,4 +54,3 @@ function result() {
     }
   }
 }
-
