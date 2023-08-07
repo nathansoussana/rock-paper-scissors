@@ -9,7 +9,7 @@ let computerScore = 0;
 let handsEl = document.getElementById("hands-el");
 let resultEl = document.getElementById("result-el");
 let playBtn = document.getElementById("play-btn");
-let resetBtn = document.getElementById("reset-btn");;
+let restartBtn = document.getElementById("restart-btn");;
 let myScoreEl = document.getElementById("my-score-el");
 let computerScoreEl = document.getElementById("computer-score-el");
 
@@ -17,13 +17,13 @@ let computerScoreEl = document.getElementById("computer-score-el");
 function playRound() {
   playerOneHand = pickHand();
   playerTwoHand = pickHand();
-  handsEl.textContent = showHands();
-  resultEl.textContent = displayResult();
+  handsEl.textContent = displayHands();
+  resultEl.textContent = computeResult();
   addPoints();
 
   if (myScore >= 5 || computerScore >= 5) {
     playBtn.style.display = "none";
-    resetBtn.style.display = "block";
+    restartBtn.style.display = "block";
   }
 }
 
@@ -32,11 +32,11 @@ function pickHand() {
   return hands[i];
 }
 
-function showHands() {
+function displayHands() {
   return `${playerOneHand} vs ${playerTwoHand}`;
 }
 
-function displayResult() {
+function computeResult() {
   if (playerOneHand === "🪨") {
     if (playerTwoHand === "🪨") {
       return "Tie!";
@@ -67,23 +67,23 @@ function displayResult() {
 }
 
 function addPoints() {
-  if (displayResult() === "You win!") {
+  if (computeResult() === "You win!") {
     myScore++;
     myScoreEl.textContent = `You: ${myScore}`;
-    
-  } else if (displayResult() === "Computer wins!") {
+
+  } else if (computeResult() === "Computer wins!") {
     computerScore++;
     computerScoreEl.textContent = `Computer: ${computerScore}`;
   }
 }
 
-function resetGame() {
+function restartGame() {
   myScore = 0;
   computerScore = 0;
 
   myScoreEl.textContent = `You: ${myScore}`;
   computerScoreEl.textContent = `Computer: ${computerScore}`;
 
-  resetBtn.style.display = "none";
+  restartBtn.style.display = "none";
   playBtn.style.display = "block";
 }
