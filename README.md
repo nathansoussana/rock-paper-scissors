@@ -1,5 +1,5 @@
 # Rock 🪨 Paper 📄 Scissors ✂️
-Play against the computer in this classic Rock-Paper-Scissors game!<br>
+This is a classic Rock-Paper-Scissors game vs. the computer!<br>
 The first one to reach a score of 5 wins. 🏆<br>
 Built with HTML, CSS and JavaScript.
 
