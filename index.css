@@ -145,7 +145,7 @@ button:hover {
   transition: 0.15s ease-in-out;
 }
 
-/* Style */
+/* Mobile styles */
 @media (max-width: 650px) {
   .individual-score-board {
     font-size: 36px;
@@ -158,11 +158,12 @@ button:hover {
     height: 171.467px;
     font-size: 60px;
   }
+  #restart-btn {
+    font-size: 36px;
+  }
+}
 
 @media (max-width: 500px) {
-  .individual-score-board {
-    font-size: 30px;
-  }
   .hand-component {
     height: 108.3px;
     font-size: 60px;
