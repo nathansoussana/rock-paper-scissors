@@ -21,29 +21,42 @@ h1 {
 
 
 /* Score board styles */
-.individual-score-board {
+
+#score-board {
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 20px;
   background-color: #5C4B99;
-  padding: 15px 30px;
-  font-size: 60px;
 }
 
 .individual-score-board {
   display: flex;
   justify-content: space-between;
+  flex-basis: 50%;
+  padding: 15px 30px;
+  font-size: 42px;
+}
+
+.score-cell {
+  flex-grow: 1;
 }
 
 #my-score-board {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
+  border: 10px solid #5C4B99;
+}
+
+#my-score-el {
+  text-align: right;
 }
 
 #computer-score-board {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
+  border: 10px solid #5C4B99;
 }
 
-.score-number {
+#computer-name {
   text-align: right;
 }
 
@@ -57,13 +70,22 @@ h1 {
 }
 
 .hand-component {
-  background-color: #5C4B99;
   flex-grow: 1;
   text-align: center;
   padding: 15px 30px;
   font-size: 120px;
   border-radius: 20px;
   border: none;
+}
+
+#my-hand {
+  background-color: #5C4B99;
+  border: 10px solid #5C4B99;
+}
+
+#computer-hand {
+  background-color: #5C4B99;
+  border: 10px solid #5C4B99;
 }
 
 #result-el {
@@ -78,13 +100,10 @@ h1 {
   gap: 20px;
 }
 
-button {
-  transition: 0.15s ease-in-out;
-}
-
 button:hover {
-  background-color: #3D246C;
+  background-color: #9ED2BE;
   cursor: pointer;
+  transition: 0.15s ease-in-out;
 }
 
 .choice-btn {
@@ -99,6 +118,8 @@ button:hover {
 
 #restart-btn {
   display: none;
+  font-family: 'Averia Libre', cursive;
+  color: #ffffff;
   background-color: #5C4B99;
   flex-grow: 1;
   text-align: center;
@@ -106,4 +127,11 @@ button:hover {
   font-size: 60px;
   border-radius: 20px;
   border: none;
+  
+}
+
+#restart-btn:hover {
+  background-color: #9ED2BE;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
 }

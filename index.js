@@ -23,6 +23,9 @@ let restartBtn = document.getElementById("restart-btn");;
 let myScoreEl = document.getElementById("my-score-el");
 let computerScoreEl = document.getElementById("computer-score-el");
 
+let myScoreBoard = document.getElementById("my-score-board");
+let computerScoreBoard = document.getElementById("computer-score-board");
+
 
 // Functions & Rules
 function pickRock() {
@@ -43,13 +46,7 @@ function playRound() {
   displayHands();
   computeResult();
   addPoints();
-
-  if (myScore >= 5 || computerScore >= 5) {
-    rockBtn.style.display = "none";
-    paperBtn.style.display = "none";
-    scissorsBtn.style.display = "none";
-    restartBtn.style.display = "block";
-  }
+  checkScore();
 }
 
 function computerChoice() {
@@ -98,10 +95,30 @@ function addPoints() {
   if (computeResult() === "You win!") {
     myScore++;
     myScoreEl.textContent = myScore;
-
+    myHand.style.borderColor = '#9ED2BE';
+    computerHand.style.borderColor = '';
   } else if (computeResult() === "Computer wins!") {
     computerScore++;
     computerScoreEl.textContent = computerScore;
+    computerHand.style.borderColor = '#9ED2BE';
+    myHand.style.borderColor = '';
+  } else {
+    myHand.style.borderColor = '';
+    computerHand.style.borderColor = '';
+  }
+}
+
+function checkScore() {
+  if (myScore >= 5 || computerScore >= 5) {
+    if (myScore === 5) {
+      myScoreBoard.style.borderColor = '#9ED2BE';
+    } else if (computerScore === 5) {
+      computerScoreBoard.style.borderColor = '#9ED2BE';
+    }
+    rockBtn.style.display = "none";
+    paperBtn.style.display = "none";
+    scissorsBtn.style.display = "none";
+    restartBtn.style.display = "block";
   }
 }
 
@@ -111,6 +128,15 @@ function restartGame() {
 
   myScoreEl.textContent = myScore;
   computerScoreEl.textContent = computerScore;
+
+  myScoreBoard.style.borderColor = '';
+  computerScoreBoard.style.borderColor = '';
+
+  myHand.textContent = '?';
+  computerHand.textContent = '?';
+
+  myHand.style.borderColor = '';
+  computerHand.style.borderColor = '';
 
   restartBtn.style.display = "none";
   rockBtn.style.display = "inline";
