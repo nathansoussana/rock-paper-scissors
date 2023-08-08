@@ -76,6 +76,10 @@ h1 {
   font-size: 120px;
   border-radius: 20px;
   border: none;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #my-hand {
@@ -111,9 +115,14 @@ button:hover {
   flex-grow: 1;
   text-align: center;
   padding: 15px 30px;
-  font-size: 120px;
+  font-size: 96px;
   border-radius: 20px;
   border: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 186.667px;
 }
 
 #restart-btn {
@@ -127,11 +136,39 @@ button:hover {
   font-size: 60px;
   border-radius: 20px;
   border: none;
-  
+  box-sizing: border-box;
 }
 
 #restart-btn:hover {
   background-color: #9ED2BE;
   cursor: pointer;
   transition: 0.15s ease-in-out;
+}
+
+/* Style */
+@media (max-width: 650px) {
+  .individual-score-board {
+    font-size: 36px;
+  }
+  .hand-component {
+    height: 217.2px;
+    font-size: 90px;
+  }
+  .choice-btn {
+    height: 171.467px;
+    font-size: 60px;
+  }
+
+@media (max-width: 500px) {
+  .individual-score-board {
+    font-size: 30px;
+  }
+  .hand-component {
+    height: 108.3px;
+    font-size: 60px;
+  }
+  .choice-btn {
+    height: 93px;
+    font-size: 36px;
+  }
 }
