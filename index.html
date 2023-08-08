@@ -8,13 +8,36 @@
   </head>
 
   <body>
-    <h1>Rock Paper Scissors</h1>
-    <h2 id="hands-el"></h2>
-    <p id="result-el"></p>
-    <button id="play-btn" onclick="playRound()">Play</button>
-    <button id="restart-btn" onclick="restartGame()">Restart</button>
-    <p id="my-score-el">You: 0</p>
-    <p id="computer-score-el">Computer: 0</p>
+    <div class="container">
+      <h1>Rock Paper Scissors</h1>
+
+      <!-- Scores -->
+      <div id="score-board">
+        <div id="my-score-board" class="individual-score-board">
+          <div>You </div>
+          <div id="my-score-el">0</div>
+        </div>
+    
+        <div id="computer-score-board" class="individual-score-board">
+          <div>Computer </div>
+          <div id="computer-score-el">0</div>
+        </div>
+      </div>
+      
+      <!-- Hands -->
+      <div id="hands">
+        <div id="my-hand">?</div>
+        <div id="computer-hand">?</div>
+      </div>
+      <p id="result-el"></p>
+
+      <!-- Buttons -->
+      <button id="rock-btn" onclick="pickRock()">🪨</button>
+      <button id="paper-btn" onclick="pickPaper()">📄</button>
+      <button id="scissors-btn" onclick="pickScissors()">✂️</button>
+      <button id="restart-btn" onclick="restartGame()">Restart</button>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

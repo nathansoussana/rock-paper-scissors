@@ -1,7 +1,28 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+
+h1 {
+  display: none;
+}
+
+#hands {
+  display: flex;
+}
+
 #result-el {
   display: none;
 }
 
 #restart-btn {
   display: none;
+}
+
+.container {
+  margin: auto;
+}
+
+.individual-score-board {
+  display: flex;
 }
