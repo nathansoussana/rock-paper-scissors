@@ -95,14 +95,20 @@ function addPoints() {
   if (computeResult() === "You win!") {
     myScore++;
     myScoreEl.textContent = myScore;
+    myScoreBoard.style.borderColor = '#9ED2BE';
+    computerScoreBoard.style.borderColor = '';
     myHand.style.borderColor = '#9ED2BE';
     computerHand.style.borderColor = '';
   } else if (computeResult() === "Computer wins!") {
     computerScore++;
     computerScoreEl.textContent = computerScore;
+    computerScoreBoard.style.borderColor = '#9ED2BE';
+    myScoreBoard.style.borderColor = '';
     computerHand.style.borderColor = '#9ED2BE';
     myHand.style.borderColor = '';
   } else {
+    myScoreBoard.style.borderColor = '';
+    computerScoreBoard.style.borderColor = '';
     myHand.style.borderColor = '';
     computerHand.style.borderColor = '';
   }
