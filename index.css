@@ -75,7 +75,7 @@ h1 {
   font-size: 120px;
   border-radius: 20px;
   border: none;
-  height: 210px;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +118,6 @@ button:hover {
   border-radius: 20px;
   border: none;
   box-shadow: 10px 10px 1px #3D246C;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,8 +135,8 @@ button:hover {
   font-size: 60px;
   border-radius: 20px;
   border: none;
-  box-sizing: border-box;
   box-shadow: 10px 10px #3D246C;
+  margin-bottom: 83.667px;
 }
 
 #restart-btn:hover {
@@ -161,6 +160,7 @@ button:hover {
   }
   #restart-btn {
     font-size: 36px;
+    margin-bottom: 24.8667px;
   }
 }
 
@@ -173,7 +173,11 @@ button:hover {
     font-size: 60px;
   }
   .choice-btn {
-    height: 93px;
+    height: 98.8667px;
     font-size: 36px;
+  }
+  #restart-btn {
+    font-size: 36px;
+    margin-bottom: 24.8667px;
   }
 }
