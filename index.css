@@ -104,10 +104,13 @@ h1 {
   gap: 20px;
 }
 
+button {
+  transition: 0.15s ease-in-out;
+}
+
 button:hover {
   background-color: #9ED2BE;
   cursor: pointer;
-  transition: 0.15s ease-in-out;
 }
 
 .choice-btn {
