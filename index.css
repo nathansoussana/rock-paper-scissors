@@ -7,6 +7,7 @@ body {
   background-color: #9F91CC;
   font-family: 'Averia Libre', cursive;
   color: #ffffff;
+  touch-action: manipulation;
 }
 
 .container {
