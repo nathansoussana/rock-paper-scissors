@@ -21,11 +21,10 @@ h1 {
 
 
 /* Score board styles */
-
 #score-board {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  /* gap: 20px; */
   border-radius: 20px;
   background-color: #5C4B99;
 }
@@ -118,6 +117,7 @@ button:hover {
   font-size: 96px;
   border-radius: 20px;
   border: none;
+  box-shadow: 10px 10px 1px #3D246C;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -137,6 +137,7 @@ button:hover {
   border-radius: 20px;
   border: none;
   box-sizing: border-box;
+  box-shadow: 10px 10px #3D246C;
 }
 
 #restart-btn:hover {
@@ -164,6 +165,9 @@ button:hover {
 }
 
 @media (max-width: 500px) {
+  .individual-score-board {
+    padding: 10px;
+  }
   .hand-component {
     height: 108.3px;
     font-size: 60px;
