@@ -105,12 +105,17 @@ h1 {
 }
 
 button {
-  transition: 0.15s ease-in-out;
+  /* transition: 0.15s ease-in-out; */
 }
 
 button:hover {
   background-color: #9ED2BE;
   cursor: pointer;
+}
+
+button:active {
+  position: relative; left: 5px; top: 5px;
+  box-shadow: none;
 }
 
 .choice-btn {
@@ -146,7 +151,11 @@ button:hover {
 #restart-btn:hover {
   background-color: #9ED2BE;
   cursor: pointer;
-  transition: 0.15s ease-in-out;
+}
+
+#restart-btn:active {
+  position: relative; left: 5px; top: 5px;
+  box-shadow: none;
 }
 
 /* Mobile styles */
