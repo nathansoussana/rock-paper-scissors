@@ -126,7 +126,7 @@ button:active {
   font-size: 96px;
   border-radius: 20px;
   border: none;
-  box-shadow: 10px 10px 1px #3D246C;
+  box-shadow: 10px 10px 0px #3D246C;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,7 +144,7 @@ button:active {
   font-size: 60px;
   border-radius: 20px;
   border: none;
-  box-shadow: 10px 10px #3D246C;
+  box-shadow: 10px 10px 0px #3D246C;
   margin-bottom: 83.667px;
 }
 
