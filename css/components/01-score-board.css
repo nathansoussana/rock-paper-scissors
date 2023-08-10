@@ -1,7 +1,6 @@
 #score-board {
   display: flex;
   justify-content: space-between;
-  /* gap: 20px; */
   border-radius: 20px;
   background-color: #5C4B99;
 }
