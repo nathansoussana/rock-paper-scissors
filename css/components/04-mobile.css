@@ -1,0 +1,35 @@
+@media (max-width: 650px) {
+  .individual-score-board {
+    font-size: 36px;
+  }
+  .hand-component {
+    height: 217.2px;
+    font-size: 90px;
+  }
+  .choice-btn {
+    height: 171.467px;
+    font-size: 60px;
+  }
+  #restart-btn {
+    font-size: 36px;
+    margin-bottom: 24.8667px;
+  }
+}
+
+@media (max-width: 500px) {
+  .individual-score-board {
+    padding: 10px;
+  }
+  .hand-component {
+    height: 108.3px;
+    font-size: 60px;
+  }
+  .choice-btn {
+    height: 98.8667px;
+    font-size: 36px;
+  }
+  #restart-btn {
+    font-size: 36px;
+    margin-bottom: 24.8667px;
+  }
+}

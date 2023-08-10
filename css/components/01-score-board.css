@@ -1,0 +1,37 @@
+#score-board {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  border-radius: 20px;
+  background-color: #5C4B99;
+}
+
+.individual-score-board {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+  padding: 15px 30px;
+  font-size: 42px;
+}
+
+.score-cell {
+  flex-grow: 1;
+}
+
+#my-score-board {
+  border-radius: 20px;
+  border: 10px solid #5C4B99;
+}
+
+#my-score-el {
+  text-align: right;
+}
+
+#computer-score-board {
+  border-radius: 20px;
+  border: 10px solid #5C4B99;
+}
+
+#computer-name {
+  text-align: right;
+}

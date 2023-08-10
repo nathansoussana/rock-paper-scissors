@@ -1,0 +1,55 @@
+#buttons-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+button:hover {
+  background-color: #9ED2BE;
+  cursor: pointer;
+}
+
+button:active {
+  position: relative; left: 5px; top: 5px;
+  box-shadow: none;
+}
+
+.choice-btn {
+  background-color: #5C4B99;
+  flex-grow: 1;
+  text-align: center;
+  padding: 15px 30px;
+  font-size: 96px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 10px 10px 0px #3D246C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 186.667px;
+}
+
+#restart-btn {
+  display: none;
+  font-family: 'Averia Libre', cursive;
+  color: #ffffff;
+  background-color: #5C4B99;
+  flex-grow: 1;
+  text-align: center;
+  padding: 15px 30px;
+  font-size: 60px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 10px 10px 0px #3D246C;
+  margin-bottom: 83.667px;
+}
+
+#restart-btn:hover {
+  background-color: #9ED2BE;
+  cursor: pointer;
+}
+
+#restart-btn:active {
+  position: relative; left: 5px; top: 5px;
+  box-shadow: none;
+}
