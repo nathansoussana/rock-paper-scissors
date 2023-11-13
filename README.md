@@ -1,7 +1,7 @@
 # Rock 🪨 Paper 📄 Scissors ✂️
 This is a classic Rock-Paper-Scissors game vs. the computer!<br>
 The first one to reach a score of 5 wins. 🏆<br>
-You can play live [here](https://main--fluffy-fenglisu-c99cb9.netlify.app).<br>
+You can play live [here](https://rock-paper-scissors-nathan-soussana.netlify.app).<br>
 Built with JS.
 
 <img width="400" alt="Screenshot 2023-08-09 at 11 55 19" src="https://github.com/nathansoussana/rock-paper-scissors/assets/85996279/98c0d595-38a6-4670-be34-e335ea2b6e50">
